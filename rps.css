@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#heading{
+    background-color: #081b31;
+    color:rgb(238, 243, 244) ;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.choice{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover{
+    opacity: 1.5;
+    /* isse apka jo picture h uspe blurring effect aayega  */
+    cursor: pointer;
+    /* jese hi image pe jayega , it wil actas pointer */
+    background-color: #081b31;
+}
+
+
+img{
+    height: 150px;
+    width: 150px;
+    /* new styling prop called objectfit,which helps to adjust image length breadth properly */
+    object-fit: cover;
+    border-radius: 50%;
+}
+.choices{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    /* gap styling is used to make gap between contents inside this class */
+    margin-top: 5rem;
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 5rem;
+    gap: 10rem;
+}
+
+#userscore,#computerscore{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.messagecontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5rem;
+    border-radius: 1rem;
+}
+
+#msg
+{
+    width: fit-content;
+    background-color: #081b31;
+    font-size: 1.8rem;
+    color: white;
+}
